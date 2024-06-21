@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-
 setup(name='MyShell-OpenVoice',
       version='0.0.0',
       description='Instant voice cloning by MyShell.',
@@ -26,7 +25,7 @@ setup(name='MyShell-OpenVoice',
 
       python_requires='>=3.9',
       install_requires=[
-            'librosa==0.9.1',
+            'librosa>=0.9.1,<0.11.0',
             'faster-whisper==0.9.0',
             'pydub==0.25.1',
             'wavmark==0.0.3',
@@ -42,4 +41,4 @@ setup(name='MyShell-OpenVoice',
             'langid==1.1.6'
       ],
       zip_safe=False
-      )
+)
